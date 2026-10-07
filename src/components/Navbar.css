@@ -1,0 +1,22 @@
+.nav {
+  position: sticky; top: 0; z-index: 40;
+  background: rgba(243, 245, 241, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--mist);
+}
+.nav__inner { height: 64px; display: flex; align-items: center; justify-content: space-between; }
+.nav__logo { display: flex; align-items: center; gap: 8px; font-family: var(--font-display); font-weight: 700; font-size: 18px; }
+.nav__logo-icon { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 8px; background: var(--tag); }
+
+.nav__links { display: none; gap: 4px; }
+.nav__link { padding: 8px 12px; border-radius: 999px; font-size: 14px; font-weight: 500; transition: background 0.2s; }
+.nav__link:hover { background: var(--mist); }
+.nav__link.active { background: var(--ink); color: var(--paper); }
+
+.nav__toggle { display: block; padding: 8px; background: none; border: 0; }
+.nav__mobile { display: flex; flex-direction: column; gap: 4px; padding-bottom: 16px; }
+
+@media (min-width: 768px) {
+  .nav__links { display: flex; }
+  .nav__toggle, .nav__mobile { display: none; }
+}

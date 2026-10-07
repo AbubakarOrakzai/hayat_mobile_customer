@@ -1,0 +1,12 @@
+.footer { background: var(--ink); color: var(--paper); margin-top: 64px; }
+.footer__grid { display: grid; gap: 32px; padding-top: 40px; padding-bottom: 40px; }
+.footer__name { font-family: var(--font-display); font-weight: 700; font-size: 20px; }
+.footer__about { margin-top: 8px; font-size: 14px; max-width: 320px; color: rgba(243, 245, 241, 0.7); }
+.footer__list { display: grid; gap: 8px; font-size: 14px; color: rgba(243, 245, 241, 0.8); }
+.footer__list li { display: flex; gap: 8px; align-items: flex-start; }
+.footer__list svg { margin-top: 3px; flex-shrink: 0; }
+.footer__links { color: var(--paper); }
+.footer__links a:hover { color: var(--tag); }
+.footer__copy { border-top: 1px solid rgba(243, 245, 241, 0.1); padding: 16px; text-align: center; font-size: 12px; color: rgba(243, 245, 241, 0.5); }
+
+@media (min-width: 768px) { .footer__grid { grid-template-columns: repeat(3, 1fr); } }

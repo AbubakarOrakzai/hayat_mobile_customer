@@ -1,0 +1,37 @@
+.hero { display: grid; gap: 40px; align-items: center; padding-top: 48px; padding-bottom: 64px; }
+.hero__title { font-size: 40px; font-weight: 800; line-height: 1.05; }
+.hero__text { margin-top: 20px; font-size: 18px; max-width: 440px; color: rgba(18, 38, 29, 0.7); }
+.hero__search { display: flex; gap: 8px; margin-top: 28px; max-width: 440px; }
+.hero__field { position: relative; flex: 1; }
+.hero__icon { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: rgba(18, 38, 29, 0.4); }
+.hero__input { width: 100%; height: 48px; padding: 0 12px 0 36px; border: 1px solid var(--mist); border-radius: 12px; background: #fff; }
+
+.hero__visual { display: grid; place-items: center; }
+.hero__tag {
+  display: block; width: 100%; max-width: 384px; padding: 32px; border-radius: 24px;
+  background: var(--tag); transform: rotate(-3deg); transition: transform 0.2s;
+  box-shadow: 8px 8px 0 var(--ink);
+}
+.hero__tag:hover { transform: rotate(0); }
+.hero__tag-brand { font-weight: 500; }
+.hero__tag-model { margin-top: 4px; font-family: var(--font-display); font-size: 30px; font-weight: 800; }
+.hero__tag-price { margin-top: 32px; font-family: var(--font-display); font-size: 44px; font-weight: 800; }
+.hero__tag-meta { margin-top: 8px; font-size: 14px; font-weight: 500; }
+.hero__skeleton { width: 100%; max-width: 384px; height: 224px; border-radius: 24px; background: var(--mist); }
+
+.home__seeall { font-size: 14px; font-weight: 600; text-decoration: underline; text-underline-offset: 4px; }
+.home__section { margin-top: 64px; }
+.home__brands { display: flex; flex-wrap: wrap; gap: 8px; }
+.home__brand { padding: 10px 20px; border: 1px solid var(--mist); border-radius: 999px; background: #fff; font-weight: 600; transition: background 0.2s, color 0.2s; }
+.home__brand:hover { background: var(--ink); color: var(--paper); }
+
+.home__perks { display: grid; gap: 24px; }
+.home__perk { display: flex; gap: 16px; }
+.home__perk-icon { flex-shrink: 0; margin-top: 4px; color: var(--pine); }
+.home__perk h3 { font-size: 18px; font-weight: 700; }
+
+@media (min-width: 768px) {
+  .hero { grid-template-columns: 1fr 1fr; }
+  .hero__title { font-size: 60px; }
+  .home__perks { grid-template-columns: repeat(3, 1fr); }
+}

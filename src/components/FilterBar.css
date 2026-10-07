@@ -1,0 +1,17 @@
+.filters { display: grid; gap: 12px; margin-bottom: 32px; grid-template-columns: 1fr; }
+.filters__search { position: relative; }
+.filters__icon { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: rgba(18, 38, 29, 0.4); }
+.filters__input { width: 100%; height: 44px; padding: 0 12px; border: 1px solid var(--mist); border-radius: 12px; background: #fff; font-size: 14px; }
+.filters__input--search { padding-left: 36px; }
+.filters__check { display: flex; align-items: center; gap: 8px; font-size: 14px; }
+.filters__check input { width: 16px; height: 16px; accent-color: var(--pine); }
+
+@media (min-width: 640px) {
+  .filters { grid-template-columns: repeat(2, 1fr); }
+  .filters__search { grid-column: 1 / -1; }
+  .filters__check { grid-column: 1 / -1; }
+}
+@media (min-width: 1024px) {
+  .filters { grid-template-columns: 2fr 1fr 1fr 1fr; }
+  .filters__search { grid-column: auto; }
+}

@@ -1,0 +1,12 @@
+// What the PUBLIC API will return: no IMEI, no cost price.
+// "price" = lowest price among in-stock devices, "stock" = number of in-stock devices.
+export const mockProducts = [
+  { _id: '1', brand: 'Samsung', model: 'Galaxy A15', condition: 'new', price: 46500, stock: 6, specs: { ram: '6 GB', storage: '128 GB', color: 'Blue Black' }, description: 'Super AMOLED display, 5000 mAh battery and a 50 MP main camera. A dependable everyday phone.', image: '' },
+  { _id: '2', brand: 'Samsung', model: 'Galaxy S23', condition: 'used', price: 128000, stock: 1, specs: { ram: '8 GB', storage: '256 GB', color: 'Phantom Black' }, description: 'Flagship performance at a used price. Checked by our team, battery health above 90%.', image: '' },
+  { _id: '3', brand: 'Apple', model: 'iPhone 13', condition: 'used', price: 142000, stock: 2, specs: { ram: '4 GB', storage: '128 GB', color: 'Midnight' }, description: 'PTA approved. Face ID, dual camera and A15 Bionic. Comes with a charger.', image: '' },
+  { _id: '4', brand: 'Apple', model: 'iPhone 15', condition: 'new', price: 285000, stock: 3, specs: { ram: '6 GB', storage: '128 GB', color: 'Pink' }, description: 'Sealed box, PTA approved. USB-C, 48 MP camera and Dynamic Island.', image: '' },
+  { _id: '5', brand: 'Xiaomi', model: 'Redmi Note 13', condition: 'new', price: 52000, stock: 8, specs: { ram: '8 GB', storage: '128 GB', color: 'Ice Blue' }, description: '120 Hz AMOLED screen and a 108 MP camera. The best value in its range.', image: '' },
+  { _id: '6', brand: 'Infinix', model: 'Hot 40 Pro', condition: 'new', price: 34500, stock: 5, specs: { ram: '8 GB', storage: '256 GB', color: 'Starlit Black' }, description: 'Big storage on a small budget, with a 120 Hz display and fast charging.', image: '' },
+  { _id: '7', brand: 'Tecno', model: 'Spark 20', condition: 'new', price: 31000, stock: 0, specs: { ram: '8 GB', storage: '128 GB', color: 'Magic Skin Green' }, description: 'Slim body, 90 Hz screen and a 50 MP camera.', image: '' },
+  { _id: '8', brand: 'Oppo', model: 'A58', condition: 'new', price: 44000, stock: 4, specs: { ram: '6 GB', storage: '128 GB', color: 'Glowing Black' }, description: '33W fast charging and a bright 90 Hz display.', image: '' },
+]

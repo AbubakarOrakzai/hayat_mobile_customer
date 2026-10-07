@@ -1,0 +1,72 @@
+:root {
+  --paper: #f3f5f1;
+  --ink: #12261d;
+  --ink-soft: rgba(18, 38, 29, 0.65);
+  --pine: #1d5b3f;
+  --tag: #ffd23f;
+  --mist: #e3e8e1;
+  --red: #b91c1c;
+  --font-display: "Bricolage Grotesque", system-ui, sans-serif;
+  --font-body: "Figtree", system-ui, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 { font-family: var(--font-display); letter-spacing: -0.02em; line-height: 1.1; }
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+ul { list-style: none; padding: 0; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 3px solid var(--pine); outline-offset: 2px; }
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+}
+
+/* layout */
+.app { min-height: 100vh; display: flex; flex-direction: column; }
+.app-main { flex: 1; }
+.container { max-width: 1152px; margin: 0 auto; padding: 0 16px; }
+.page { padding-top: 40px; padding-bottom: 40px; }
+
+/* shared text helpers */
+.muted { color: var(--ink-soft); }
+.error-text { color: var(--red); }
+.link-btn { background: none; border: 0; text-decoration: underline; }
+.notfound { padding: 64px 16px; text-align: center; }
+
+/* shared buttons and fields */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  height: 48px; padding: 0 24px; border: 0; border-radius: 12px;
+  background: var(--ink); color: var(--paper); font-weight: 600;
+  transition: background 0.2s;
+}
+.btn:hover { background: var(--pine); }
+.btn:disabled { opacity: 0.6; cursor: not-allowed; }
+.btn--green { background: var(--pine); }
+.btn--green:hover { background: var(--ink); }
+
+.field {
+  width: 100%; border: 1px solid var(--mist); background: #fff;
+  border-radius: 12px; padding: 12px;
+}
+
+/* product grid used on Home and Products */
+.products-grid { display: grid; gap: 20px; grid-template-columns: 1fr; }
+@media (min-width: 640px) { .products-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .products-grid { grid-template-columns: repeat(4, 1fr); } }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}

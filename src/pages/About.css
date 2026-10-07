@@ -1,0 +1,8 @@
+.about { max-width: 768px; margin: 0 auto; padding-left: 16px; padding-right: 16px; padding-top: 48px; }
+.about__title { font-size: 36px; font-weight: 800; }
+.about__text { display: grid; gap: 16px; margin-top: 24px; font-size: 18px; line-height: 1.7; color: rgba(18, 38, 29, 0.8); }
+.about__info { display: grid; gap: 16px; margin-top: 40px; }
+.about__box { padding: 20px; background: #fff; border: 1px solid var(--mist); border-radius: 16px; }
+.about__box dt { font-size: 14px; }
+.about__box dd { margin: 0; font-weight: 600; }
+@media (min-width: 640px) { .about__info { grid-template-columns: 1fr 1fr; } }

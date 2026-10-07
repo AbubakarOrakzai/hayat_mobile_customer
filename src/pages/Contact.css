@@ -1,0 +1,15 @@
+.contact { display: grid; gap: 40px; max-width: 1024px; padding-top: 48px; }
+.contact__title { font-size: 36px; font-weight: 800; }
+.contact__lead { margin-top: 12px; }
+.contact__info { display: grid; gap: 12px; margin-top: 24px; }
+.contact__info li { display: flex; gap: 12px; align-items: flex-start; }
+.contact__info svg { margin-top: 4px; flex-shrink: 0; }
+
+.contact__form { display: grid; gap: 16px; align-content: start; }
+.contact__label { display: block; }
+.contact__label span { display: block; margin-bottom: 4px; font-size: 14px; font-weight: 500; }
+.contact__submit { justify-self: start; }
+.contact__ok { color: var(--pine); font-weight: 500; }
+.contact__err { font-weight: 500; }
+
+@media (min-width: 768px) { .contact { grid-template-columns: 1fr 1fr; } }

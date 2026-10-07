@@ -1,0 +1,2 @@
+.products__empty { text-align: center; padding: 64px 0; }
+.products__empty-title { font-family: var(--font-display); font-size: 20px; font-weight: 700; margin-bottom: 12px; }
