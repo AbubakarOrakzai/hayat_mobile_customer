@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { FiPhone, FiMapPin, FiClock } from 'react-icons/fi'
 import { SHOP } from '../config'
+import Credits from './Credit'
 import './Footer.css'
 
 export default function Footer() {
@@ -22,7 +23,11 @@ export default function Footer() {
           <li><Link to="/contact">Contact us</Link></li>
         </ul>
       </div>
-      <p className="footer__copy">© {new Date().getFullYear()} {SHOP.name}</p>
+
+      <div className="footer__bottom">
+        <p className="footer__copy">© {new Date().getFullYear()} {SHOP.name}</p>
+        <Credits variant="dark" />
+      </div>
     </footer>
   )
 }
